@@ -15,7 +15,7 @@ public class obstacle : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "player")
+        if (other.gameObject.CompareTag("player"))
         {
             Debug.Log("hitplayer");
             Material shader = GetComponent<Renderer>().material;
