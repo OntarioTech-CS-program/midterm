@@ -7,14 +7,13 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: sand
-  m_Shader: {fileID: -6465566751694194690, guid: edac594c3ee60ef4abf4e0332f16c34d, type: 3}
+  m_Name: reflection
+  m_Shader: {fileID: -6465566751694194690, guid: 027c5437873cf67488f951a3c71e5680, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
-  m_InvalidKeywords:
-  - _UVS_UV0
-  m_LightmapFlags: 4
+  m_InvalidKeywords: []
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -25,12 +24,12 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _Texture2D:
-        m_Texture: {fileID: 2800000, guid: 08121cbee7573564299f700a8a4f1968, type: 3}
+    - _cube:
+        m_Texture: {fileID: 8900000, guid: 18ec2d52be8f4524a97c25a2ed27838e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Texture2DAsset_0d9e2f594296456e9652f67b349fc884_Out_0_Texture2D:
-        m_Texture: {fileID: 0}
+    - _texture2d:
+        m_Texture: {fileID: 10309, guid: 0000000000000000f000000000000000, type: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -49,12 +48,13 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _UVS: 0
+    - _metallic: 0.5
+    - _smooth: 0.9
     m_Colors:
-    - _tiling: {r: 8, g: 8, b: 0, a: 0}
+    - _colour: {r: 1, g: 0.3106593, b: 0.25471687, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &3957440203879752216
+--- !u!114 &7221488722395090528
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
